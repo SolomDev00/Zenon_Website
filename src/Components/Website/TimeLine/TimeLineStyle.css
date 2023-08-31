@@ -1,0 +1,225 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-blue: #0a0844;
+  --purble: #6c2d89;
+  --dark-blue: #03022c;
+  --green: #4bae4f;
+  --pink: #ff478c;
+  --grad-purble-dark: #935cec;
+  --grad-purble-light: #ff87dd;
+  --grad-orange-dark: #fc5c98;
+  --grad-orange-light: #ff7757;
+  --gray: #20253d;
+}
+
+#certi {
+  overflow: hidden;
+  position: relative;
+}
+
+#certi .main-title {
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+#certi .main-title h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #dfdfdf;
+  text-transform: uppercase;
+}
+
+#certi .main-title p {
+  font-size: 1.1rem;
+  color: #fc5c98;
+}
+
+/* =========== Time Line ============= */
+
+#certi .timeline-main {
+  max-width: 650px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+#certi .timeline p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+#certi .timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: white;
+  transform: translateX(-3rem);
+}
+
+#certi .timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--grad-purble-dark);
+}
+
+#certi .timeline .timeline-container {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+#certi .timeline .timeline-container .timeline-icon {
+  position: absolute;
+  left: -88px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: #1b194b;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+#certi .timeline .timeline-container .timeline-icon img {
+  cursor: pointer;
+  width: 60%;
+  height: 60%;
+}
+
+#certi .timeline .timeline-container .timeline-body {
+  background-color: #1b194b;
+  border-radius: 3px;
+  padding: 20px 20px 15px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+#certi .timeline .timeline-container .timeline-body:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+  transition: 0.3s;
+}
+
+#certi .timeline .timeline-container .timeline-body .cert-info {
+  text-align: right;
+}
+
+#certi .timeline .timeline-container .cert-name {
+  text-align: left;
+  line-height: 1.2;
+}
+
+#certi .timeline-container .timeline-body .timeline-title {
+  margin-bottom: 1.4rem;
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+}
+
+#certi .timeline-body .timeline-title .badge-cont {
+  gap: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#certi .timeline-container .timeline-body .timeline-title .badge {
+  background-image: linear-gradient(
+    45deg,
+    var(--grad-orange-light),
+    var(--grad-orange-dark)
+  );
+  padding: 8px 8px;
+  border-radius: 3px;
+  font-size: 16px;
+  height: 32px;
+  font-weight: bold;
+}
+
+#certi .timeline-body .timeline-title .badge.link {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#certi .timeline-container .badge.link:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 20px var(--grad-orange-dark);
+}
+
+#certi .timeline-container:hover .timeline-icon {
+  transform: scale(1.2);
+  border-color: var(--grad-orange-dark);
+  box-shadow: 0px 0px 40px 0px rgba(100, 57, 199, 0.2);
+}
+
+#certi .timeline .timeline-container:hover .timeline-body {
+  border-color: var(--grad-orange-dark);
+  box-shadow: 0px 0px 20px 0px rgba(100, 57, 199, 0.2);
+}
+
+#certi .timeline .timeline-container:hover .timeline-body:before {
+  background-color: var(--grad-orange-dark);
+}
+
+#certi .timeline-container .timeline-body .timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.4;
+  margin-top: 16px;
+  margin-bottom: -10px;
+  font-size: 15px;
+  text-align: right;
+}
+
+/* MEDIA Q */
+@media (max-width: 1100px) {
+  #certi .timeline {
+    transform: translateX(-1rem);
+  }
+}
+@media (max-width: 820px) {
+  #certi .timeline-body .timeline-title .badge-cont {
+    flex-wrap: wrap;
+  }
+  #certi .timeline {
+    width: 100%;
+    transform: translateX(-2rem);
+  }
+  #certi .timeline-container .timeline-body .timeline-title .badge {
+    font-size: 13px;
+    height: 28px;
+  }
+  #certi .container {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  #certi .timeline-body .timeline-title .badge-cont {
+    flex-wrap: wrap;
+  }
+  #certi .timeline-body .timeline-title .badge-cont .link {
+    border-radius: 5px;
+  }
+}
