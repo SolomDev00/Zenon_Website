@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Zenon_Website/static/css/main.b0f20b3f.css",
-    "main.js": "/Zenon_Website/static/js/main.85b7b181.js",
+    "main.css": "/Zenon_Website/static/css/main.0c5ba195.css",
+    "main.js": "/Zenon_Website/static/js/main.ca028539.js",
     "static/media/banner_1.jpg": "/Zenon_Website/static/media/banner_1.c265eea8e673d4249084.jpg",
     "static/media/banner_2.jpg": "/Zenon_Website/static/media/banner_2.72c009887bf27766a9d2.jpg",
     "static/media/banner_3.jpg": "/Zenon_Website/static/media/banner_3.f47c62b8e0a7f2f48042.jpg",
@@ -14,13 +14,13 @@
     "static/media/7.png": "/Zenon_Website/static/media/7.3bf6fb4b18b1f904676d.png",
     "static/media/5.png": "/Zenon_Website/static/media/5.fdcd5a9666e89d0a41bf.png",
     "static/media/1.png": "/Zenon_Website/static/media/1.3dfb665e058d08c99f28.png",
-    "static/media/19.svg": "/Zenon_Website/static/media/19.599465ba235cc6d4425e4a2908a4b5c9.svg",
+    "static/media/19.svg": "/Zenon_Website/static/media/19.5f9fd64d341d807640b9ab791b0efea1.svg",
     "index.html": "/Zenon_Website/index.html",
-    "main.b0f20b3f.css.map": "/Zenon_Website/static/css/main.b0f20b3f.css.map",
-    "main.85b7b181.js.map": "/Zenon_Website/static/js/main.85b7b181.js.map"
+    "main.0c5ba195.css.map": "/Zenon_Website/static/css/main.0c5ba195.css.map",
+    "main.ca028539.js.map": "/Zenon_Website/static/js/main.ca028539.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0f20b3f.css",
-    "static/js/main.85b7b181.js"
+    "static/css/main.0c5ba195.css",
+    "static/js/main.ca028539.js"
   ]
 }
